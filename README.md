@@ -4,6 +4,8 @@
 
 A Livebook smart-cell to render diagrams powered by [Kroki][kroki].
 
+[![Livebook badge](https://livebook.dev/badge/v1/blue.svg)](https://livebook.dev/run?url=https%3A%2F%2Fhexdocs.pm%2Fkino_kroki%2Fexamples.livemd)
+
 ## Installation
 
 Add it as a dependency in your notebook with:
