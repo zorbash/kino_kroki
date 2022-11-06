@@ -20,8 +20,6 @@ defmodule Kino.KrokiSmartcell do
     {:ok, %{type: ctx.assigns.type, diagram: ctx.assigns.diagram}, ctx}
   end
 
-  require Logger
-
   @impl true
   def handle_event("update_type", type, ctx) do
     ctx = assign(ctx, type: type)
@@ -118,7 +116,6 @@ defmodule Kino.KrokiSmartcell do
       });
 
       ctx.handleEvent("update_type", (event) => {
-        console.log('update_type', event)
         typeEl.value = event.type;
         diagramEl.value = event.diagram;
       });
